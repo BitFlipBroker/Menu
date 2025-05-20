@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>
+    html, body {
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .scrolling-container {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 2px solid #ff4da6;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.25);
+      position: relative;
+      animation: glow 2s infinite alternate ease-in-out;
+    }
+
+    .scrolling-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 120s linear infinite;
+      color: #fff;
+      font-size: 38px;
+      line-height: 1.5;
+      text-shadow: 0 0 10px #ff4da6;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 10px #ff4da6; }
+      100% { box-shadow: 0 0 30px #ff4da6; }
+    }
+
+    .scrolling-text span {
+      margin-right: 80px;
+      color: #ff4da6;
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: #ff99cc;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #ff4da6;
+      animation: flicker 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+      100% { opacity: 0.2; transform: scale(1); }
+    }
+</style>
+</head>
+<body>
+<div class="scrolling-container">
+<div class="scrolling-text"><span>1 tk – 2s (tease)</span><span>25 tk – 5s (low)</span><span>50 tk – 7s (low)</span><span>75 tk – 10s (medium)</span><span>100 tk – 12s (medium)</span><span>150 tk – 15s (medium)</span><span>200 tk – 20s (high)</span><span>300 tk – 25s (high)</span><span>400 tk – 30s (high)</span><span>500 tk – 40s (wave)</span><span>600 tk – 50s (pulse)</span><span>700 tk – 60s (wave+high)</span><span>800 tk – 75s (random)</span><span>1000 tk – 90s (max)</span><span>1500 tk – 120s (max + pulse)</span><span>3000 tk – 180s (dom control)</span><span>5000 tk – 300s (lush control)</span></div>
+<!-- Spark effects -->
+<div class="sparkle" style="top: 10px; left: 40px; animation-delay: 0s;"></div>
+<div class="sparkle" style="top: 22px; left: 120px; animation-delay: 0.3s;"></div>
+<div class="sparkle" style="top: 15px; left: 220px; animation-delay: 0.6s;"></div>
+<div class="sparkle" style="top: 18px; left: 360px; animation-delay: 0.9s;"></div>
+<div class="sparkle" style="top: 8px; left: 520px; animation-delay: 1.2s;"></div>
+<div class="sparkle" style="top: 20px; left: 680px; animation-delay: 1.5s;"></div>
+<div class="sparkle" style="top: 13px; left: 840px; animation-delay: 1.8s;"></div>
+</div>
+</body>
+</html>
