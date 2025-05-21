@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>
+    html, body {
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .scrolling-container {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 2px solid #00ff00;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.25);
+      position: relative;
+      animation: glow 2s infinite alternate ease-in-out;
+    }
+
+    .scrolling-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 120s linear infinite;
+      color: #00ff00;
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 1.5;
+      text-shadow: 0 0 10px #00ff00;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 10px #00ff00; }
+      100% { box-shadow: 0 0 30px #00ff00; }
+    }
+
+    .scrolling-text span {
+      margin-right: 80px;
+      color: #00ff00;
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: #99ff99;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00ff00;
+      animation: flicker 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+      100% { opacity: 0.2; transform: scale(1); }
+    }
+</style>
+</head>
+<body>
+<div class="scrolling-container">
+<div class="scrolling-text">
+<span>25 tk – Look up & say “Please...”</span>
+<span>50 tk – Stroke it while drooling</span>
+<span>75 tk – Kiss the tip</span>
+<span>100 tk – Tongue tease head</span>
+<span>150 tk – Cock slap her tongue</span>
+<span>200 tk – Rub cock across her lips slowly</span>
+<span>250 tk – Press head of cock into her cheek</span>
+<span>300 tk – Spit on cock while looking up</span>
+<span>400 tk – Lick and suck balls</span>
+<span>500 tk – Slap cock on her face</span>
+<span>600 tk – Deepthroat</span>
+</div>
+<div class="sparkle" style="top: 10px; left: 40px; animation-delay: 0s;"></div>
+<div class="sparkle" style="top: 22px; left: 120px; animation-delay: 0.3s;"></div>
+<div class="sparkle" style="top: 15px; left: 220px; animation-delay: 0.6s;"></div>
+<div class="sparkle" style="top: 18px; left: 360px; animation-delay: 0.9s;"></div>
+<div class="sparkle" style="top: 8px; left: 520px; animation-delay: 1.2s;"></div>
+<div class="sparkle" style="top: 20px; left: 680px; animation-delay: 1.5s;"></div>
+<div class="sparkle" style="top: 13px; left: 840px; animation-delay: 1.8s;"></div>
+</div>
+</body>
+</html>
