@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .scrolling-container {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      border: 2px solid #ff4da6;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.2);
+      position: relative;
+      animation: glow 2s infinite alternate ease-in-out;
+    }
+
+    .scrolling-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 120s linear infinite;
+      font-size: 38px;
+      line-height: 1.5;
+      color: #ff69b4;
+      text-shadow:
+        0 0 5px #ff4da6,
+        0 0 10px #ff4da6,
+        0 0 20px #ff4da6,
+        0 0 30px #ff4da6,
+        0 0 40px #ff1493,
+        0 0 60px #ff1493;
+    }
+
+    .scrolling-text span {
+      margin-right: 80px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 10px #ff4da6; }
+      100% { box-shadow: 0 0 30px #ff4da6; }
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: #ff99cc;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #ff4da6;
+      animation: flicker 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+      100% { opacity: 0.2; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="scrolling-container">
+    <div class="scrolling-text">
+      <span>💋 50 tk – Blow a Kiss</span>
+      <span>😘 100 tk – Makeout w/ Tongue</span>
+      <span>🍑 150 tk – Ass Tease + Spread</span>
+      <span>🍑 200 tk – Spank Ass</span>
+      <span>👗 250 tk – Outfit Change</span>
+      <span>👙 300 tk – Show Tits</span>
+      <span>⚡ 400 tk – Nipple Clamps Tease</span>
+      <span>🥵 500 tk – Pull Nipple Clamp</span>
+      <span>🔇 600 tk – Panties in Mouth Tease</span>
+      <span>⚡ 700 tk – Vibe on Panties</span>
+      <span>🌸 800 tk – Pussy Spread + Clit Rub</span>
+      <span>👋 1000 tk – Pussy and Thigh Slaps</span>
+      <span>🎥 1500 tk – POV Oral</span>
+      <span>🔥 2000 tk – POV Body Tease</span>
+      <span>👅 2500 tk – Facefuck POV</span>
+      <span>🍆 3000 tk – POV Penetration</span>
+      <span>🎬 4000 tk – POV Oral → Sex → Finish</span>
+      <span>💣 5000 tk – Ultimate POV Show</span>
+    </div>
+
+    <script>
+      const sparkleCount = 50;
+      const container = document.querySelector('.scrolling-container');
+      for (let i = 0; i < sparkleCount; i++) {
+        const sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        sparkle.style.top = Math.random() * 100 + '%';
+        sparkle.style.left = Math.random() * 100 + '%';
+        sparkle.style.animationDelay = (Math.random() * 2).toFixed(2) + 's';
+        container.appendChild(sparkle);
+      }
+    </script>
+  </div>
+</body>
+</html>
